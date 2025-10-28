@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BITE ME - 반응형 리디자인</title>
+    <meta name="description" content="바잇미 스타일 반응형 쇼핑 메인" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip to content -->
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="topbar">
+        <div class="container">
+          <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+          <div class="logo-wrap">
+            <a class="logo" href="#" aria-label="홈으로 이동">BITE ME</a>
+            <nav class="pet-switch" aria-label="펫 타입 선택">
+              <a href="#" class="active">강아지</a>
+              <span>|</span>
+              <a href="#">고양이</a>
+            </nav>
+          </div>
+          <div class="search-wrap">
+            <form class="search" role="search" aria-label="사이트 검색">
+              <input type="search" placeholder="검색어를 입력하세요" aria-label="검색" />
+              <button type="submit" aria-label="검색하기">검색</button>
+            </form>
+            <nav class="utility" aria-label="유틸리티 메뉴">
+              <!-- 하트 아이콘 -->
+              <a class="icon" href="#" aria-label="관심상품">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M20.84 4.61c-1.54-1.34-3.97-1.17-5.36.39L12 8.17l-3.48-3.17C7.13 3.44 4.7 3.27 3.16 4.61 1.36 6.18 1.28 8.96 2.93 10.64L12 20l9.07-9.36c1.65-1.68 1.57-4.46-.23-6.03z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+              </a>
+              <!-- 장바구니 아이콘 -->
+              <a class="icon" href="#" aria-label="장바구니">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="9" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="18" cy="20" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.8h7.7a2 2 0 0 0 2-1.6l1.3-7.4H7.1" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </svg>
+              </a>
+              <!-- 사람 아이콘 -->
+              <a class="icon" href="#" aria-label="마이메뉴">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M4.5 19.5a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <nav class="gnb" aria-label="주요 카테고리">
+        <div class="container">
+          <ul>
+            <li class="quick"><a href="#welcome">웰컴딜</a></li>
+            <li class="quick"><a href="#only">ONLY 바잇미</a></li>
+            <li class="quick"><a href="#culture">컬처</a></li>
+            <li class="quick"><a href="#collab">콜라보</a></li>
+            <li><a href="#">사료</a></li>
+            <li><a href="#">간식</a></li>
+            <li><a href="#">영양제</a></li>
+            <li><a href="#">의류/스타일</a></li>
+            <li><a href="#">용품</a></li>
+            <li><a href="#">장난감</a></li>
+            <li><a href="#">ONLY</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero Banner -->
+      <section class="hero" aria-label="메인 프로모션">
+        <img class="hero-img" src="assets/hero-banner.jpg" alt="케이프 맛집 몽띠에 25FW 신상 출시 배너" />
+        <div class="container">
+          <div class="hero-content">
+            <h1>오늘도 맛있게, 건강하게</h1>
+            <p>반려동물을 위한 신선한 선택. 지금 특가를 확인하세요!</p>
+            <a class="btn primary" href="#deals">특가 보러가기</a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Category Tiles -->
+      <section class="section" aria-labelledby="cat-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="cat-title">카테고리</h2>
+            <a class="more" href="#">전체보기</a>
+          </div>
+          <div class="tile-grid">
+            <a class="tile" href="#">by바잇미</a>
+            <a class="tile" href="#">수제간식</a>
+            <a class="tile" href="#">저알러지</a>
+            <a class="tile" href="#">건조간식</a>
+            <a class="tile" href="#">습식간식</a>
+            <a class="tile" href="#">베이킹</a>
+            <a class="tile" href="#">껌간식</a>
+            <a class="tile" href="#">토핑/파우더</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flash Sale / Time Deal -->
+      <section id="deals" class="section flash-sale" aria-labelledby="flash-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="flash-title">한정 타임딜</h2>
+            <div class="countdown" role="timer" aria-live="polite">
+              <span id="hh">00</span>:<span id="mm">00</span>:<span id="ss">00</span>
+            </div>
+          </div>
+          <div class="card-grid">
+            <!-- Sample product cards -->
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/dog-bow.jpg" alt="리본 코디 강아지" /></div>
+              <h3 class="title">어니스트밀 화식 10팩</h3>
+              <p class="price"><em>9,600원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/blue-knit-dog.jpg" alt="블루 니트 후드 강아지" /></div>
+              <h3 class="title">룰루키친 자연식 1kg</h3>
+              <p class="price"><s>39,000원</s> <em>29,250원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/tank-boat.jpg" alt="세일 프린트 민소매 탑" /></div>
+              <h3 class="title">프로틴볼 180g</h3>
+              <p class="price"><em>17,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/k9-can.jpg" alt="K9 내추럴 캔 사료" /></div>
+              <h3 class="title">샘플러 100g (3종)</h3>
+              <p class="price"><s>5,500원</s> <em>회원전용</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 실시간 인기 -->
+      <section class="section" aria-labelledby="rec-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="rec-title">실시간 인기</h2>
+            <a class="more" href="#">더보기</a>
+          </div>
+          <div class="card-grid">
+            <!-- 4 sample cards -->
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/실시간인기1.jpg" alt="샴푸 3종 세트" /></div>
+              <h3 class="title">샴푸 3종 세트</h3>
+              <p class="price"><em>68,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/실시간인기2.jpg" alt="커플 스웻셔츠" /></div>
+              <h3 class="title">커플 스웻셔츠</h3>
+              <p class="price"><em>54,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/실시간인기3.jpg" alt="친환경 배변봉투 2개 세트" /></div>
+              <h3 class="title">친환경 배변봉투 2개 세트</h3>
+              <p class="price"><em>54,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/실시간인기4.jpg" alt="아이엠 머드 대용량 샴푸" /></div>
+              <h3 class="title">아이엠 머드 대용량 샴푸</h3>
+              <p class="price"><em>27,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+      <!-- Generic product grid -->
+      <section class="section" aria-labelledby="rec-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="rec-title">추천 상품</h2>
+            <a class="more" href="#">더보기</a>
+          </div>
+          <div class="card-grid">
+            <!-- 8 sample cards -->
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/diaper-flower.jpg" alt="플라워 밴드형 배변 팬츠" /></div>
+              <h3 class="title">플라워 밴드형 배변 팬츠</h3>
+              <p class="price"><em>9,900원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/two-dogs-scarf.jpg" alt="플로랄 스카프 세트" /></div>
+              <h3 class="title">플로랄 스카프 세트</h3>
+              <p class="price"><em>12,900원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/bear-hoodie.jpg" alt="베어 후디" /></div>
+              <h3 class="title">베어 후디</h3>
+              <p class="price"><em>7,500원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/red-blue-jacket.jpg" alt="레드 블루 바람막이" /></div>
+              <h3 class="title">레드 블루 바람막이</h3>
+              <p class="price"><em>15,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/shampoo-trio.jpg" alt="샴푸 3종 세트" /></div>
+              <h3 class="title">샴푸 3종 세트</h3>
+              <p class="price"><em>8,800원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/matching-sweatshirt.jpg" alt="커플 스웻셔츠" /></div>
+              <h3 class="title">커플 스웻셔츠</h3>
+              <p class="price"><em>22,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/poop-bag-set.jpg" alt="친환경 배변봉투 2개 세트" /></div>
+              <h3 class="title">친환경 배변봉투 2개 세트</h3>
+              <p class="price"><em>19,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+            <article class="card">
+              <div class="thumb" aria-hidden="true"><img src="assets/iam-mud.jpg" alt="아이엠 머드 대용량 샴푸" /></div>
+              <h3 class="title">아이엠 머드 대용량 샴푸</h3>
+              <p class="price"><em>5,000원</em></p>
+              <button class="btn secondary">장바구니</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <section aria-labelledby="cs-title">
+          <h3 id="cs-title">CS CENTER</h3>
+          <p>02-2038-3727 / 070-4188-1824</p>
+          <p>상담시간 10:00-18:00 (점심 12:00-13:00)</p>
+        </section>
+        <section aria-labelledby="info-title">
+          <h3 id="info-title">회사정보</h3>
+          <address>
+            서울특별시 강남구 테헤란로20길 10, 8층<br />
+            사업자번호 210-87-00613
+          </address>
+        </section>
+        <section aria-labelledby="policy-title">
+          <h3 id="policy-title">정책</h3>
+          <ul class="links">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">입점문의</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="container copyright">© 2025 BITE ME. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
